@@ -12,3 +12,10 @@ export interface BenifitType{
 
 }
   
+export interface ClassType{
+  name:string;
+  desc?:string;
+  image:string;
+
+}
+  
