@@ -24,6 +24,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
 
 
+
     return (
         <nav>
             <div className={`${flexBetween} fixed top-0 z-30 w-full py-6 ${navbarBackground}`}>
@@ -67,10 +68,10 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                         {/* MENU ITEMS  */}
 
                         <div className={`${flexBetween} flex-col gap-6 text-xl `}>
-                            <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page="Home" />
-                            <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page="Benifits" />
-                            <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page="Our Classes" />
-                            <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page="Contact Us" />
+                            <Link selectedPage={selectedPage} setIsMenuToggle={setIsMenuToggle} setSelectedPage={setSelectedPage} page="Home" />
+                            <Link selectedPage={selectedPage} setIsMenuToggle={setIsMenuToggle} setSelectedPage={setSelectedPage} page="Benifits" />
+                            <Link selectedPage={selectedPage} setIsMenuToggle={setIsMenuToggle} setSelectedPage={setSelectedPage} page="Our Classes" />
+                            <Link selectedPage={selectedPage} setIsMenuToggle={setIsMenuToggle} setSelectedPage={setSelectedPage} page="Contact Us" />
 
                         </div>
                     </div>
